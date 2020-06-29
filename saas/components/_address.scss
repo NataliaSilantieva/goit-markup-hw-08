@@ -11,6 +11,10 @@ address{
     display: flex;  
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width:$mobile-max) {
+        display:none;
+    }
 } 
 
 .envelope{
@@ -55,7 +59,7 @@ address{
 
 
 
-                       //Футер//@extend
+                       //Футер//
 .address{
 
     margin: 0;

@@ -27,26 +27,41 @@ button{
     letter-spacing: 0.06em;
 
     text-align: center;
-    padding-top:200px;
-    padding-bottom: 200px;
+    padding:118px 60px;
+    margin: 0 auto;
+    
     background-image: linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url(../images/hero.jpg)  ;
-    max-width: 1600px;
+    max-width: 480px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin:auto;
+    
+    @media screen and (min-width:$tablet-min){
+        max-width: 768px;
+        padding-top:118px;
+        padding-bottom: 118px;
+        }
+    @media screen and (min-width:$desctop-min){
+    max-width: 1600px;
+    padding-top:200px;
+    padding-bottom: 200px;
+    }
     
 }
 .hero-title {
     color: $secondary-text-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.62;
     text-transform: uppercase;
     
-    width:696px;
+    width:360px;
     margin: auto;
-    
 
-    
+   
+    @media screen and (min-width:$desctop-min){
+        font-size: 44px;
+        line-height: 1.4;
+        width:696px;
+    }
 }

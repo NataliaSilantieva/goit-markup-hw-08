@@ -1,13 +1,25 @@
 .upper-logo{
-    font-family: $mainFontFamily;
-    font-size: 26px;
+    font-family: $secondaryFontFamily;
+    font-size: 24px;
     line-height: 1.2;
     color: $primary-text-color  ;
-    
-    padding-top: 24px;
-    padding-bottom: 25px;
+    transition: all $transition-cubic;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+   
 
     transition: all $transition-cubic;
+
+    @media screen and (min-width:$tablet-min){
+        padding-top: 26px;
+        padding-bottom: 26px;
+
+    }
+    @media screen and (min-width:$desctop-min){
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 
 &:hover,
 &:focus{

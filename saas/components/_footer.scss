@@ -24,24 +24,30 @@ footer{
     letter-spacing: 0.03em;
     
     line-height: 2;
-
-    display: flex;
-    padding:48px 0 24px 0;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width:$desctop-min){
+        display: flex;
+        padding:48px 0 24px 0;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    @media screen and (max-width:$mobile-max){
+        text-align: center;
+    }
     
 }
 
 .footer-block{
-
+    padding-top: 60px;
+    padding-bottom:60px;
+    @media screen and (min-width:$desctop-min){
     padding-right: 69px;
-    
+    }
 }
 
 .logo{
-    font-family: $mainFontFamily;
+    font-family: $secondaryFontFamily;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.2;
     color: $secondary-text-color  ;
 
@@ -54,7 +60,11 @@ footer{
 }
 }
 
-
+.subscribe{
+    @media screen and (max-width:$mobile-max){
+        padding-top: 60px;
+    }
+}
 .footer-input{
     width: 358px;
     height: 50px;
@@ -63,6 +73,10 @@ footer{
     padding: 18px 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (max-width:$mobile-max){
+        margin:20px;
+    }
     
 &:focus{
     color:$secondary-text-color;
@@ -98,7 +112,10 @@ footer{
 .join{
     text-transform: uppercase;
 
-    display: flex;
+    @media screen and (min-width:$desctop-min){
+        display: flex;
+    }
+    
 
     transition: all $transition-cubic;
 
@@ -111,7 +128,7 @@ footer{
     position: absolute;
     top: 13px;
     left:148px;
-    margin-left:10px;
+   
 }
 
 

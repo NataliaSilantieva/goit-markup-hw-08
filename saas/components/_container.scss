@@ -1,9 +1,13 @@
 .container{
    
-    width: $main-width;
+    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
     
+    
+    @media screen and (min-width:$desctop-min){
+        width: $main-width;
+        margin: 0 auto;
+    }
     
 }
