@@ -1,0 +1,65 @@
+address{
+    
+    font-style: normal;
+    margin-left: auto;
+}
+
+                                         //Шапка//
+.site-address {
+    
+    
+    display: flex;  
+    margin: 0;
+    padding: 0;
+} 
+
+.envelope{
+    margin-right: 30px;
+}
+
+.address-list{
+    
+    padding: 0;
+}
+
+
+.address-list{
+    color: $accent-color;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $mainFontSize;
+    line-height: 1.1px;
+    fill:$accent-color;
+
+    transition: all $transition-cubic;
+
+
+    &:hover,
+    &:focus{
+       color:$link-color;
+       fill:$link-color;
+   }
+
+}    
+ 
+.icon-envelope{
+    margin-right: 10px;
+}
+.icon-phone{
+    margin-right: 10px;
+}
+
+
+ 
+
+
+
+                       //Футер//@extend
+.address{
+
+    margin: 0;
+    padding: 0;
+
+    transition: all $transition-cubic;
+}

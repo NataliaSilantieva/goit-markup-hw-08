@@ -1,0 +1,53 @@
+
+
+.companies-list{
+  
+    
+    padding: 0 0 94px 0 ;  
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    & :first-child{
+        margin: 0;
+    }
+}
+
+
+
+.section-companies{
+    position: relative;
+    transition: all $transition-cubic;
+    
+    outline:  1px solid $social-link-color;
+    width: 170px;
+    height: 90px;
+    
+    
+
+    &:focus,
+    &:hover{
+    outline: 1px solid $link-color;
+}   
+}
+
+
+.companies-link{
+    width: 170px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-logo{
+    
+    position:absolute;
+    @extend %centered;
+    transition: all $transition-cubic;
+    fill:$social-link-color;
+
+  &:hover{
+    fill:$link-color;
+    
+}
+}

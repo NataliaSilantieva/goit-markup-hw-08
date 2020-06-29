@@ -1,0 +1,20 @@
+.upper-logo{
+    font-family: $mainFontFamily;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $primary-text-color  ;
+    
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    transition: all $transition-cubic;
+
+&:hover,
+&:focus{
+    color: $link-color;
+}
+}
+
+.colortext{
+    color:$link-color;
+}
