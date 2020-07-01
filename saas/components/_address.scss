@@ -7,18 +7,25 @@ address{
                                          //Шапка//
 .site-address {
     
-    
-    display: flex;  
+  
     margin: 0;
     padding: 0;
 
     @media screen and (max-width:$mobile-max) {
         display:none;
     }
+    @media screen and (min-width:$desctop-min){
+        display: flex;
+    }
 } 
 
 .envelope{
+    @media screen and (min-width:$tablet-min){
+        margin-bottom: 10px;
+    }
+    @media screen and (min-width:$desctop-min){
     margin-right: 30px;
+    }
 }
 
 .address-list{

@@ -129,9 +129,9 @@
 
     <ul class="team-names  ">
 <li class="cards">
-    
-        <img src="./images/john_smith.jpg" class="image-team" alt="Николай Кучеренко" width="450" height="320"/>
-   
+      <div class="thumb">
+        <img srcset="./images/kucherenko_1x.jpg 1x,./images/kucherenko_2x.jpg 2x, ./images/kucherenko_3x.jpg 3x" src="./images/kucherenko_1x.jpg" class="image-team" alt="Николай Кучеренко" />
+     </div>
     <h3 class="names">Николай Кучеренко</h3>
     <p class="occupation">Product Designer</p>
     <ul class="social">
@@ -171,9 +171,9 @@
 
 </li>
 <li class="cards">
-    
-        <img src="./images/marta_stewart.jpg" class="image-team" alt="Ольга Иванова" width="450" height="320"/>
-    
+    <div class="thumb">
+        <img srcset="./images/ivanova_1x.jpg 1x,./images/ivanova_2x.jpg 2x, ./images/ivanova_3x.jpg 3x" src="./images/ivanova_1x.jpg" class="image-team" alt="Ольга Иванова" />
+    </div>
     <h3 class="names">Ольга Иванова</h3>
     <p class="occupation">Frontend Developer</p>
     <ul class="social">
@@ -212,9 +212,9 @@
     </ul>
 </li>
 <li class="cards">
-    
-        <img src="./images/robert_jakis.jpg" class="image-team" alt="Андрей Шевченко" width="450" height="320"/>
-    
+    <div class="thumb">
+        <img srcset="./images/shevchenko_1x.jpg 1x,./images/shevchenko_2x.jpg 2x, ./images/shevchenko_3x.jpg 3x" src="./images/shevchenko_1x.jpg" class="image-team" alt="Андрей Шевченко" />
+    </div>
     <h3 class="names">Андрей Шевченко</h3>
     <p class="occupation">Marketing</p>
     <ul class="social">
@@ -253,9 +253,9 @@
     </ul>
 </li>
 <li class="cards">
-    
-        <img src="./images/martin_doe.jpg" class="image-team" alt="Иван Николаев" width="450" height="320"/>
-    
+    <div class="thumb">
+        <img srcset="./images/nikolaev_1x.jpg 1x,./images/nikolaev_2x.jpg 2x, ./images/nikolaev_3x.jpg 3x" src="./images/nikolaev_1x.jpg" class="image-team" alt="Иван Николаев" />
+    </div>   
     <h3 class="names">Иван Николаев</h3>
     <p class="occupation">UI Designer</p>
     <ul class="social">
@@ -358,10 +358,11 @@
 
 
 
-                               <!--Футер-->
+                              <!--Футер-->
 
 <footer>
     <div class="footer-container container">
+        <div class="tablet-flex">
 <div class="footer-block">
     <a href="./index.html" class="logo">
         <span class="colortext">Web</span> Studio
@@ -375,7 +376,7 @@
         </ul>
     </address> 
 </div>
-<div >
+<div class="footer-social">
     <b class="join">присоединяйтесь</b>
     <ul class="social-footer">
         <li class="social-links">
@@ -412,9 +413,10 @@
             </li>
 </ul>
 </div>
+</div>
 <div class="subscribe">
     <b class="join">Подпишитесь на рассылку</b><br>
-    <div>
+    <div class="subscription-form">
     <input type="email" class="footer-input" name="email" placeholder="E-mail ">
             
     <button type="button" class="button-footer">Подписаться
