@@ -15,8 +15,7 @@ nav{
     padding-left: 15px;
     margin: 0 auto; 
     display: flex;
-    align-items: center;
-    justify-content: stretch;
+    
     
     @media screen and (min-width:$tablet-min) {
         width:$tablet-min;
