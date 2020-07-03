@@ -515,8 +515,14 @@ summary {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  padding-bottom: 28px;
+  padding-bottom: 12px;
   position: relative;
+}
+
+@media screen and (min-width: 481px) {
+  .current {
+    padding-bottom: 28px;
+  }
 }
 
 .current::after {

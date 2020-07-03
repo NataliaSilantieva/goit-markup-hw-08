@@ -76,8 +76,10 @@ nav{
     font-weight: 500;
     font-size: $mainFontSize;
     line-height: 1.1;
-    
+    padding-bottom: 12px;
+    @media screen and (min-width:$tablet-min) {
     padding-bottom: 28px;
+    }
     position: relative;
 }
 
