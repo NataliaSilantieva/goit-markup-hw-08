@@ -34,7 +34,7 @@ button{
     max-width: $mobile-max;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    
     
     @media screen and (min-width:$tablet-min){
         max-width: $tablet-max;
