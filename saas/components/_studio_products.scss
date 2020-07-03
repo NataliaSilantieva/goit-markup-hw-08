@@ -10,15 +10,11 @@
 
 .section{
     letter-spacing: 0.03em;
-    width:$mobile-max;
+    
     padding:0 0 94px 0;
     margin: 0 auto;
-    @media screen and (min-width:$tablet-min){
-        width: $tablet-max;}
-    @media screen and (min-width:$desctop-min){  
-        width:$desctop-max ;
-    margin: 0 auto;
-    }
+    
+  
     
 }
 .section-app{

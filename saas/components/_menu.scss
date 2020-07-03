@@ -1,11 +1,10 @@
-.menu.icon-close_menu{
+.menu-button .icon-close_menu{
     display:none;
 }
-.menu.is-open.icon-close_menu{
+.menu-button.is-open .icon-close_menu{
     display: block;
     margin: 0;
    
-    
     
     @media screen and (min-width:$tablet-min){
         display: none;
@@ -14,30 +13,19 @@
 }
    
 
-
-
-.menu.is-open.icon-menu{
+.menu-button.is-open .icon-menu{
     display: none;
 }
-.menu.icon-menu{
+.menu-button .icon-menu{
     display: block;
     margin: 0;
    
-    
-    
     @media screen and (min-width:$tablet-min){
         display: none;
     }
 }
 
 
-
-
-    
-
-
-
-    
 
 .menu.is-open{
     
@@ -54,7 +42,7 @@
     justify-content: space-around;
     border-top: 1px solid $border-color;
     background-color:$secondary-text-color;
-    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
     
 }
 .menu{
@@ -76,5 +64,6 @@
    &:hover,
    &:focus{
        fill:$link-color;
+       outline-color: transparent;
    }
 }
