@@ -1,11 +1,7 @@
 
-header{
-    position: relative;
-}
+
 nav{
-    @media screen and (max-width:$mobile-max){
-    display:none;
-    }
+    
     @media screen and (min-width:$tablet-min) {
         display: flex;  
     }
@@ -13,27 +9,25 @@ nav{
 }
 
 .container-nav{
-    
+    position: relative;
     width: 480px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 ; 
-   
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
     
     @media screen and (min-width:$tablet-min) {
         width:$tablet-max;
         
-        display: flex;
-        align-items: center;
-        justify-content: center; 
+         
 
      }
     @media screen and (min-width:$desctop-min){
         width: $main-width;
         margin: 0 auto; 
-        display: flex;
-        align-items: center;
-    justify-content: center; 
+         
     }
       
 } 
@@ -46,14 +40,31 @@ nav{
 
 .pages-list{
     
-    display: inline-block;
-    margin: 0  50px 0  0;
+    display: block;
+    
+    
+    @media screen and (max-width:$mobile-max){
+        &:not(:last-child){
+            padding: 0 0 40px 0;
+        }
+        margin:0;
+    }
+    @media screen and (min-width:$tablet-min) {
+        display: inline-block;
+        &:first-child {
+            margin-left: 81px;
+        }
+        margin: 0  50px 0  0;
     padding: 32px 0 ;
- 
+    }
 
- &:first-child {
-     margin-left: 85px;
- }
+    @media screen and (min-width:$desctop-min){
+        margin: 0  50px 0  0;
+    padding: 32px 0 ;
+        &:first-child {
+            margin-left: 85px;
+        }
+}
  
  &:last-child{
      margin-right: 0;

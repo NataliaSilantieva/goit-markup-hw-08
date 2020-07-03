@@ -1,69 +1,80 @@
-.menu-button .icon-close_menu{
+.menu.icon-close_menu{
     display:none;
 }
-.menu .is-open .icon-close_menu{
+.menu.is-open.icon-close_menu{
     display: block;
+    margin: 0;
+   
+    
+    
+    @media screen and (min-width:$tablet-min){
+        display: none;
+    }
+
 }
+   
 
 
-.menu .is-open .icon-menu{
+
+.menu.is-open.icon-menu{
     display: none;
 }
-
-
-.icon-menu{
-    
+.menu.icon-menu{
+    display: block;
     margin: 0;
    
-    &:hover,
-    &:focus{
-        fill:$link-color;
-    }
+    
     
     @media screen and (min-width:$tablet-min){
         display: none;
     }
 }
 
-.icon-close_menu{
-    margin: 0;
-   
-    &:hover,
-    &:focus{
-        fill:$link-color;
-    }
-    
-    @media screen and (min-width:$tablet-min){
-        display: none;
-    }
 
-}
 
-.menu .is-open{
+
     
-    display:flex;
+
+
+
+    
+
+.menu.is-open{
+    
+    display:block;
     text-align: center;
     position: absolute;
     z-index: 999;
-    top: 100%;
+    top:60px;
     left: 0;
-    width: 100%;
-    height:100%;
+    width: 480px;
+    height:453px;
     padding-top: 60px;
     padding-bottom: 60px;
-    
+    justify-content: space-around;
     border-top: 1px solid $border-color;
     background-color:$secondary-text-color;
     
     
 }
+.menu{
+    display: flex;
+
+    @media screen and (max-width:$mobile-max){
+        
+            display: none;
+        }
+}
 
 
 .menu-button{
          position: absolute;
-         top: 10px;
-        right: 15px;
+         top: 22px;
+        right: 23px;
         border: none;
         background-color: transparent;
-
+   &:hover,
+   &:focus{
+       fill:$link-color;
+   }
 }
