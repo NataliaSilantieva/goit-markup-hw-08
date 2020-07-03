@@ -1,3 +1,7 @@
+
+header{
+    position: relative;
+}
 nav{
     @media screen and (max-width:$mobile-max){
     display:none;

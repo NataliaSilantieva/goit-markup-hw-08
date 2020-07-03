@@ -25,26 +25,28 @@ button{
 }
 .hero{
     letter-spacing: 0.06em;
-
+    display: flex;
     text-align: center;
     padding:118px 60px;
     margin: 0 auto;
     
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8)), url(../images/hero.jpg)  ;
-    max-width: 480px;
+    background-image: $hero-gradient, url(../images/mobile_hero_2x.jpg)  ;
+    max-width: $mobile-max;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
     @media screen and (min-width:$tablet-min){
-        max-width: 768px;
+        max-width: $tablet-max;
         padding-top:118px;
         padding-bottom: 118px;
+        background-image: $hero-gradient, url(../images/tablet_hero_2x.jpg);
         }
     @media screen and (min-width:$desctop-min){
     max-width: 1600px;
     padding-top:200px;
     padding-bottom: 200px;
+    background-image: $hero-gradient, url(../images/desctop_hero_2x.jpg)  ;
     }
     
 }

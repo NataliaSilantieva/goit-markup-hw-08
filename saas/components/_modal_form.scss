@@ -19,13 +19,19 @@
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
     transition: transform $transition-cubic;
-    width:528px;
-    height: 581px;
+    width:450px;
+    height: 609px;
     background-color: $secondary-text-color;
     letter-spacing: 0.03em;
     color:$accent-color;
     font-weight: 500;
-    font-size: $mainFontSize;}
+    font-size: $mainFontSize;
+    
+    @media screen and (min-width:$desctop-min){
+        width:528px;
+        height: 581px;
+    }
+    }
     
 
 .backdrop.is-hidden.modal {
@@ -37,13 +43,24 @@
    
     position: absolute;
     border-radius: 50%;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    @include border (rgba(0, 0, 0, 0.1));
     width: 30px;
     height: 30px;
     padding: 9px 9px 10px 10px;
-    left: 507px;
+    left: 412px;
+    bottom: 571px;
+    @media screen and (min-width:$desctop-min){
+        left: 490px;
+        bottom: 543px;
+    }
+
+    &:hover,
+    &:focus{
+        fill: $link-color;
+    }
+
     background-color:$secondary-text-color;
-    bottom: 560px;
+    
 
 }
 
@@ -82,9 +99,13 @@
     @include border($form-border-color);
     border-radius: 4px;
     margin: 28px 40px 0 40px;
-    width: 448px;
+    width: 370px;
     height:40px;
     padding-left: 42px;
+
+    @media screen and (min-width:$desctop-min){
+        width: 448px;
+    } 
     transition: all $transition-cubic;
 
    &:focus{
@@ -114,8 +135,13 @@ left:59px;
     @include border($form-border-color);
     border-radius: 4px;
     
-    width: 448px;
+    width: 370px;
     padding:12px 16px;
+
+    @media screen and (min-width:$desctop-min){
+        width: 448px;
+    };
+
    
     letter-spacing: 0.01em;
     color: $accent-color;
@@ -140,10 +166,12 @@ textarea{
     resize: none;
 }
 .check{
-    
-    
+    padding:20px 40px 30px 35px;
+
+    @media screen and (min-width:$desctop-min){
      padding:20px 51px 30px 51px;
-    line-height: 1.7;
+     
+    }
 
 }
 .policy{
@@ -151,12 +179,19 @@ textarea{
     
     padding-left: 25px;
     display: block;
+    font-size: 12px;
+    line-height: 1.2;
+
+    @media screen and (min-width:$desctop-min){
+        font-size: $mainFontSize;
+        line-height: 1.1; 
+    }
 }
 
 .icon-square{
     position: absolute;
     left:0;
-    bottom:5px;
+    bottom:0;
 
 .checkbox:checked ~ &{
    opacity:0;
