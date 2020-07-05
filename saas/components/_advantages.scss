@@ -17,16 +17,16 @@
 }
 .advantages-list{
     padding: 0;
-    width:450px;
+   
     @media screen and (min-width:$tablet-min){
-    width: 354px;
+        width: calc((100% - 30px) / 2);
     &:nth-child(2n+1){
         margin-right:30px;
        
     }
 }
     @media screen and (min-width:$desctop-min){
-        width:270px; 
+        width: calc((100% - 30px) / 4.33); 
         &:not(:last-child){
             margin-right: 30px;
         }
@@ -51,9 +51,7 @@
     padding:25px 0;
 
 
-    @media screen and (min-width:$desctop-min){
-        width: 270px;
-    }
+   
 }
 
 
